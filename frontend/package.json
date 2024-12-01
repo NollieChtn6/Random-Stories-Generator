@@ -1,0 +1,33 @@
+{
+	"name": "frontend",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc -b && vite build",
+		"preview": "vite preview",
+		"tada-generate:output": "npx gql-tada generate-output",
+		"tada-generate:schema": "npx gql-tada generate schema 'http://localhost:4000' --output './schema.graphql'"
+	},
+	"dependencies": {
+		"@apollo/client": "^3.11.10",
+		"@biomejs/biome": "^1.9.4",
+		"gql.tada": "^1.8.10",
+		"graphql": "^16.9.0",
+		"react": "^18.3.1",
+		"react-dom": "^18.3.1"
+	},
+	"devDependencies": {
+		"@types/react": "^18.3.12",
+		"@types/react-dom": "^18.3.1",
+		"@vitejs/plugin-react": "^4.3.4",
+		"eslint": "^9.15.0",
+		"eslint-plugin-react-hooks": "^5.0.0",
+		"eslint-plugin-react-refresh": "^0.4.14",
+		"globals": "^15.12.0",
+		"typescript": "~5.6.2",
+		"typescript-eslint": "^8.15.0",
+		"vite": "^6.0.1"
+	}
+}
