@@ -1,0 +1,10 @@
+type Query {
+	complements: [VerbEntity!]!
+	randomStory: String!
+}
+
+type VerbEntity {
+	id: Float!
+	singularForm: String!
+	pluralForm: String!
+}
